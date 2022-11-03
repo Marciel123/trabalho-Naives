@@ -1,9 +1,11 @@
 from sklearn.ensemble import RandomForestClassifier
-import pandas as pd #manipulacao de dados
+import pandas as pd 
+from sklearn.naive_bayes import GaussianNB
+import numpy as np
+import pandas as pd
 
 
-
-dados=pd.read_csv('/content/drive/MyDrive/inteligencia artificial/trabalho iris/Iris.csv')
+dados=pd.read_csv('Iris')
 
 dados.head()
 classes = dados['Species']
