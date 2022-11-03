@@ -2,7 +2,7 @@ from sklearn.ensemble import RandomForestClassifier
 import pandas as pd
 
 
-dados=pd.read_csv('Iris')
+dados=pd.read_csv Iris
 
 dados.head()
 classes = dados['Species']
