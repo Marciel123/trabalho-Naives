@@ -34,14 +34,14 @@ PetalWidthCm = st.number_input('Digite a largura da petala')
 if st.button('Clique aqui'):
   resultado = model.predict([[SepalLengthCm,SepalWidthCm,PetalLengthCm,PetalWidthCm]])
 
-  if resultado == ('Iris_setosa'):
+  if resultado == ('Iris-setosa'):
     st.write('setosa')
     st.image('Iris_setosa.PNG')
     
-  if resultado == ('Iris_versicolor'):
+  if resultado == ('Iris-versicolor'):
     st.write('versicolor')
     st.image('Iris_versicolor.PNG')
    
-  if resultado == ('Iris_virginica'):
+  if resultado == ('Iris-virginica'):
     st.write('virginica')
     st.image('Iris_virginica.PNG')
