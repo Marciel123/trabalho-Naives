@@ -1,5 +1,4 @@
 import streamlit as st
-
 from sklearn.naive_bayes import GaussianNB
 
 import pandas as pd
