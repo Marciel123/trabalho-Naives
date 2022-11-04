@@ -34,3 +34,4 @@ PetalWidthCm = st.number_input('Digite a largura da petala')
 if st.button('Clique aqui'):
   resultado = floresta.predict([[SepalLengthCm,SepalWidthCm,PetalLengthCm,PetalWidthCm]])
   st.write('Resultado:',resultado)
+  st.image('Iris_virginica').png
