@@ -36,11 +36,11 @@ if st.button('Clique aqui'):
 
   if resultado == ('Iris_setosa'):
     st.write('setosa')
-    st.image('iris_setosa.PNG')
+    st.image('Iris_setosa.PNG')
     
   if resultado == ('Iris_versicolor'):
     st.write('versicolor')
-    st.image('iris_versicolor.PNG')
+    st.image('Iris_versicolor.PNG')
    
   if resultado == ('Iris_virginica'):
     st.write('virginica')
