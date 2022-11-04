@@ -4,7 +4,6 @@ from sklearn.naive_bayes import GaussianNB
 import pandas as pd
 
 
-from sklearn.ensemble import RandomForestClassifier 
 import pandas as pd
 dados = pd.read_csv('Iris.csv')
 
