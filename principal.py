@@ -26,7 +26,7 @@ model.fit(features_treino,classes_treino)
 predicoes = model.predict(features_teste)
 
 
-st.title('Aplicativo de IA')
+st.title('Aplicativo de IA Marciel')
 SepalLengthCm = st.number_input('Digite o comprimento do caule')
 SepalWidthCm = st.number_input('Digite a largura do caule')
 PetalLengthCm = st.number_input('Digite o comprimento da petala')
