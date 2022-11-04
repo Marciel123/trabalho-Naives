@@ -27,6 +27,7 @@ predicoes = model.predict(features_teste)
 
 
 st.title('Aplicativo de IA Marciel')
+st.image('Marciel.PNG')
 SepalLengthCm = st.number_input('Digite o comprimento do caule')
 SepalWidthCm = st.number_input('Digite a largura do caule')
 PetalLengthCm = st.number_input('Digite o comprimento da petala')
