@@ -38,14 +38,14 @@ PetalWidthCm = st.number_input('Digite a largura da petala')
 if st.button('Clique aqui'):
   resultado = floresta.predict([[SepalLengthCm,SepalWidthCm,PetalLengthCm,PetalWidthCm]])
 
-  if resultado == ('Iris-setosa'):
+  if resultado == ('Iris_setosa'):
     st.write('setosa')
-    st.image('iris_setosa.jpg')
+    st.image('iris_setosa.PNG')
     
-  if resultado == ('Iris-versicolor'):
+  if resultado == ('Iris_versicolor'):
     st.write('versicolor')
-    st.image('iris_versicolor.jpg')
+    st.image('iris_versicolor.PNG')
    
-  if resultado == ('Iris-virginica'):
+  if resultado == ('Iris_virginica'):
     st.write('virginica')
-    st.image('iris_virginica.jpg')
+    st.image('iris_virginica.PNG')
