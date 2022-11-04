@@ -1,7 +1,6 @@
 import streamlit as st
 
 from sklearn.naive_bayes import GaussianNB
-import numpy as np
 import pandas as pd
 
 
@@ -22,10 +21,13 @@ features_treino,features_teste,classes_treino,classes_teste = train_test_split(f
                                                                                test_size=0.26,
                                                                                random_state=3)
 
-floresta = RandomForestClassifier(n_estimators=90) 
 
-floresta.fit(features_treino,classes_treino)
-predicoes = floresta.predict(features_teste)
+
+model= GausianNB()
+
+
+model.fit(features_treino,classes_treino)
+predicoes = model.predict(features_teste)
 
 
 st.title('Aplicativo de IA')
@@ -35,7 +37,15 @@ PetalLengthCm = st.number_input('Digite o comprimento da petala')
 PetalWidthCm = st.number_input('Digite a largura da petala')
 if st.button('Clique aqui'):
   resultado = floresta.predict([[SepalLengthCm,SepalWidthCm,PetalLengthCm,PetalWidthCm]])
-  st.write('Resultado:',resultado)
-  st.image('Iris_virginica.PNG')
-  st.image('Iris_setosa.PNG')
-  st.image('Iris_ versicolor.PNG')
+
+  if resultado == ('Iris-setosa'):
+    st.write('setosa')
+    st.image('iris_setosa.jpg')
+    
+  if resultado == ('Iris-versicolor'):
+    st.write('versicolor')
+    st.image('iris_versicolor.jpg')
+   
+  if resultado == ('Iris-virginica'):
+    st.write('virginica')
+    st.image('iris_virginica.jpg')
