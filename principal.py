@@ -37,5 +37,5 @@ if st.button('Clique aqui'):
   resultado = floresta.predict([[SepalLengthCm,SepalWidthCm,PetalLengthCm,PetalWidthCm]])
   st.write('Resultado:',resultado)
   st.image('Iris_virginica.PNG')
-    st.image('Iris_setosa.PNG')
-      st.image('Iris_versicolor.PNG')
+  st.image('Iris_setosa.PNG')
+  st.image('Iris_versicolor.PNG')
