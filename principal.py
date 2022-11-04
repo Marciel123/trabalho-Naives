@@ -38,4 +38,4 @@ if st.button('Clique aqui'):
   st.write('Resultado:',resultado)
   st.image('Iris_virginica.PNG')
   st.image('Iris_setosa.PNG')
-  st.image('Iris_versicolor.PNG')
+  st.image('Iris_ versicolor.PNG')
